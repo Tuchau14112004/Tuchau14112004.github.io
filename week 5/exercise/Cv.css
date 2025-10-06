@@ -1,98 +1,42 @@
-/* General setup */
+/* RESET */
 body {
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    color: #333;
-    background-color: #fff;
+    font-family: Arial, sans-serif;
   }
   
-  /* Navigation bar */
-  nav {
-    background-color: #2b2b2b;
-    padding: 12px 0;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    margin: 0 20px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 14px;
-  }
-  
-  nav ul li a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Page layout */
-  main {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 0 20px;
-  }
-  
-  /* Headers */
-  h1 {
-    font-size: 28px;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  h2 {
-    color: #007acc;
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 30px;
-  }
-  
-  h3 {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  /* Paragraphs */
-  p {
-    font-size: 14px;
-    color: #555;
-    line-height: 1.6;
-  }
-  
-  /* Lists */
-  ul {
-    margin: 10px 0 20px 20px;
-  }
-  
-  li {
-    font-size: 14px;
-    line-height: 1.5;
-  }
-  
-  /* Lines */
-  hr {
-    border: none;
-    border-bottom: 1px solid #ddd;
-    margin: 30px 0;
-  }
-  
-  /* Footer */
-  footer {
-    background-color: #2b2b2b;
-    color: #fff;
+  /* Thanh đen trên cùng */
+  .navbar {
+    background-color: black;
+    overflow: hidden;
     text-align: center;
-    padding: 20px 0;
-    font-size: 13px;
-    margin-top: 40px;
+  }
+  
+  .navbar a {
+    display: inline-block;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Nội dung chính */
+  .content {
+    min-height: 90vh;
+    text-align: center;
+    padding-top: 50px;
+  }
+  
+ /* Footer (Thanh đen phía dưới cùng) */
+.footer {
+    background-color: #0e0101; /* màu đen xám */
+    color: white;
+    text-align: center;
+    padding: 30px 0; /* khoảng cách trên dưới */
+    margin-top: 50px; /* tạo khoảng trống giữa nội dung và footer */
+    font-size: 14px;
   }
   

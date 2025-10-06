@@ -1,22 +1,22 @@
- <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <title>Exercise 1 - Navigation Bar</title>
-      <link rel="stylesheet" href="hw.css">
-    </head>
-    <body>
-      <div class="navbar">
-        <a href="#about">Home</a>
-        <a href="#education">Tutorials</a>
-        <a href="#experience">About</a>
-        <a href="#skills">Newsletter</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </body>
-    </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 1 - Navigation Bar</title>
+  <link rel="stylesheet" href="hw.css">
+</head>
+<body>
+  <!-- Thanh đen trên cùng -->
+  <div class="navbar">
+    <a href="#about">Home</a>
+    <a href="#education">Tutorials</a>
+    <a href="#experience">About</a>
+    <a href="#skills">Newsletter</a>
+    <a href="#contact">Contact</a>
+  </div>
 
-  <main>
+  <!-- Nội dung chính -->
+  <main class="content">
     <section id="about">
       <h1>Vũ Thị Tú Châu</h1>
       <h3>Student at The International School</h3>
@@ -67,23 +67,55 @@
       <h2>Contact Information</h2>
       <p>Email: 22070310@vnu.edu.vn</p>
       <p>Phone: 0123456789</p>
-      <p>GitHub: <a href="https://github.com/Tuchau14112004" target="_blank">Tuchau14112004.github</a></p>
+      <p>GitHub: 
+        <a href="https://github.com/Tuchau14112004" target="_blank">Tuchau14112004.github</a>
+      </p>
       <hr>
     </section>
   </main>
 
-  <footer>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <title>Exercise 1 - Navigation Bar</title>
-      <link rel="stylesheet" href="hw.css">
-    </head>
-    </body>
-    </html>
-    <p>© 2025 Vũ Thị Tú Châu. All rights reserved.</p>
-    <p>Created using basic HTML and CSS.</p>
-  </footer>
-
-</body>
-</html>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Bottom Bar Fixed</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+  
+     
+  
+      /* Thanh đen phía dưới */
+      .footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 15px 0;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+      }
+  
+      /* Giúp nội dung không bị footer che mất */
+      .content {
+        padding-bottom: 60px;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+   
+  
+    <div class="footer">
+      © 2025 My Website | All Rights Reserved
+    </div>
+  
+  </body>
+  </html>
+  
