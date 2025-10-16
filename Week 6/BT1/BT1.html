@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>The priority of selectors</title>
+
+  <style type="text/css">
+    /* Áp dụng cho toàn trang */
+    * {
+      font: 20px "Comic Sans MS";
+    }
+
+    /* Thẻ tùy chỉnh */
+    MyCustomizeTag {
+      display: block;
+      text-align: center;
+      text-transform: capitalize;
+      text-decoration: underline;
+      width: 500px;
+    }
+
+    /* Selector theo thẻ div */
+    div {
+      background-color: yellow;
+      margin: 0px 0px 5px 5px;
+      width: 300px;
+    }
+
+    /* Selector theo class */
+    .GroupFormat {
+      font-weight: bold;
+      color: #f00;
+      width: 400px;
+    }
+
+    /* Selector theo id (ưu tiên cao nhất) */
+    #TheHighestPriority {
+      background-color: #000;
+      font: italic 30px "Times New Roman";
+      color: #fff;
+      font-weight: normal;
+    }
+  </style>
+</head>
+
+<body>
+  <MyCustomizeTag>Here is customize tag</MyCustomizeTag>
+
+  <div>The first paragraph.</div>
+  <div class="GroupFormat">The second paragraph.</div>
+  <div class="GroupFormat" id="TheHighestPriority">The third paragraph.</div>
+  <div>The fourth paragraph.</div>
+  <div class="GroupFormat">The fifth paragraph.</div>
+  <div class="GroupFormat">The sixth paragraph.</div>
+  <div>The seventh paragraph.</div>
+</body>
+</html>
