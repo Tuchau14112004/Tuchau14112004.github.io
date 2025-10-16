@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Recognize Odd and Even Elements</title>
+
+  <style>
+    /* Áp dụng cho tất cả thẻ div */
+    div {
+      width: 400px;
+      padding: 8px;
+      margin: 4px 0;
+      font-family: "Comic Sans MS", sans-serif;
+    }
+
+    /* Phần tử chẵn (2, 4, 6, ...) */
+    div:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    /* Phần tử lẻ (1, 3, 5, ...) */
+    div:nth-child(2n + 1) {
+      background-color: #ff9;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Aptech Semester 1's Subjects</h1>
+
+  <div>Elementary Programming in C.</div>
+  <div>Explore HTML, DHTML and JavaScript.</div>
+  <div>Designing Web Sites in Dreamweaver.</div>
+  <div>RDBMS and Data Management.</div>
+  <div>Working with SQL Server Database Objects.</div>
+  <div>eProject (Dreamweaver).</div>
+</body>
+</html>
