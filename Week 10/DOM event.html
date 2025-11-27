@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 onclick="changeText(this)">Click on this text!</h1>
+
+<button onclick="displayDate()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function changeText(id) {
+  id.innerHTML = "Ooops!";
+}
+
+function displayDate() {
+  document.getElementById("demo").innerHTML = Date();
+}
+</script>
+
+</body>
+</html>
